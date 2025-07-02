@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import "./styles.css";
+import styles from './Styles.module.scss';
 
 export function App() {
   const [tasks, setTasks] = useState(() => {
@@ -33,9 +33,9 @@ export function App() {
   };
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1>Список завдань(o･ω･o)</h1>
-      <form onSubmit={addTask} className="form">
+      <form onSubmit={addTask} className={styles.form}>
         <input
           type="text"
           value={input}
@@ -48,7 +48,7 @@ export function App() {
         {tasks.map((task, index) => (
           <li key={index}>
             <span
-              className={task.completed ? "completed" : "uncompleted"}
+              className={task.completed ? styles.completed : styles.uncompleted}
               onClick={() => toggleTask(index)}>
               {task.text}
             </span>
