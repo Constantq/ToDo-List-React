@@ -1,0 +1,81 @@
+body {
+  font-family: Impact, fantasy;
+  padding: 2rem;
+  background: #f0f0f0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
+.form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  background-color: rgba(214, 213, 213, 0.459);
+  margin-top: 0.2em;
+}
+li button{
+    background-color:transparent;
+    padding: 0;
+}
+span{
+    font-weight: 800;
+    font-size: large;
+    margin: auto 0;
+}
+input{
+    background-color: rgb(214, 210, 210);
+    color: black;
+    border: none;
+    border-radius: 0.5em;
+}
+img{
+   cursor: pointer; 
+}
+.completed {
+  text-decoration: line-through;
+  color: green;
+  cursor: pointer;
+  
+}
+.uncompleted{
+color: crimson;
+cursor: pointer;
+}
+.delete {
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
